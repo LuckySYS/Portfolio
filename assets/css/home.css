@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: black;
     height: 100vh;
@@ -24,6 +28,10 @@ body{
 
 .flex{
     display: flex;
+}
+
+.efeito-txt-topo, .efeito-img-topo, .titulo, .efeito-especialidades1, .efeito-especialidades2, .efeito-especialidades3, .efeito-txt-sobre, .efeito-img-sobre, .efeito-img-port1, .efeito-img-port2, .efeito-img-port3, .efeito-formulario{
+    visibility: hidden;
 }
 
 .btn-contato button{
@@ -87,6 +95,7 @@ header nav.menu-desktop ul li{
     color: #00FF08;
     font-size: 40px;
     cursor: pointer;
+    display: none;
 }
 
 .menu-mobile{
@@ -390,6 +399,9 @@ footer .line-footer p a{
 }
 
 @media screen and (max-width: 1020px){
+    .btn-abrir-menu i{
+        display: block;
+    }
     .flex{
         flex-direction: column;
     }

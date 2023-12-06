@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/menu.js" defer></script>
+    <script src="assets/js/reveal.js" defer></script>
     <title>Agência LCS</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
 
             <div class="logo">
 
-                <a href="#"><img src="assets/img/logo3.png" alt="" class="logo2"></a>
+                <a href="home.html"><img src="assets/img/logo3.png" alt="" class="logo2"></a>
 
             </div>
 
@@ -27,10 +29,10 @@
 
                 <ul>
 
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Especialidade</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#topo">Inicio</a></li>
+                    <li><a href="#especialidades">Especialidade</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
 
                 </ul>
 
@@ -38,7 +40,7 @@
 
             <div class="btn-contato">
 
-                <a href=""><button>Contato</button></a>
+                <a href="#formulario"><button>Contato</button></a>
 
             </div>
 
@@ -60,11 +62,11 @@
 
                     <ul>
     
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Especialidade</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#topo">Inicio</a></li>
+                        <li><a href="#especialidades">Especialidade</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#portfolio">Projetos</a></li>
+                        <li><a href="#formulario">Contato</a></li>
 
                     </ul>
     
@@ -84,25 +86,25 @@
 
     <main>
 
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="topo">
 
             <div class="interface">
 
                 <div class="flex">
 
-                    <div class="txt-topo-site">
+                    <div class="txt-topo-site efeito-txt-topo">
 
                         <h1><span>TRANSFORMANDO</span> IDEIAS EM REALIDADE <span>DIGITAL.</span></h1>
 
                         <p>Meu portfólio reflete minha capacidade única de transformar ideias em realidade digital. Com uma paixão inabalável pela inovação, combino criatividade e habilidades técnicas para dar vida a visões extraordinárias. Cada projeto é uma jornada em que converto conceitos em experiências tangíveis, criando soluções digitais que inspiram e impactam positivamente.</p>
 
                         <div class="btn-contato">
-                            <a href=""><button>Entre em contato</button></a>
+                            <a href="#formulario"><button>Entre em contato</button></a>
                         </div>
 
                     </div>
 
-                    <div class="img-topo-site">
+                    <div class="img-topo-site efeito-img-topo">
 
                         <img src="assets/img/pessoa.jpg" class="imagem">
 
@@ -114,7 +116,7 @@
 
         </section>
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
 
             <div class="inetrface">
 
@@ -122,7 +124,7 @@
 
                 <div class="flex">
 
-                    <div class="especialidades-box">
+                    <div class="especialidades-box efeito-especialidades1">
 
                         <i class="bi bi-code-square"></i>
 
@@ -132,7 +134,7 @@
 
                     </div>
 
-                    <div class="especialidades-box">
+                    <div class="especialidades-box efeito-especialidades2">
 
                         <i class="bi bi-cart"></i>
 
@@ -142,7 +144,7 @@
 
                     </div>
 
-                    <div class="especialidades-box">
+                    <div class="especialidades-box efeito-especialidades3">
 
                         <i class="bi bi-wordpress"></i>
 
@@ -158,19 +160,19 @@
 
         </section>
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
 
             <div class="interface">
 
                 <div class="flex">
 
-                    <div class="img-sobre">
+                    <div class="img-sobre efeito-img-sobre">
 
                         <img src="assets/img/gojo.jpg" class="gojo">
 
                     </div>
 
-                    <div class="txt-sobre">
+                    <div class="txt-sobre efeito-txt-sobre">
 
                         <h2>MUITO PRAZER, <span>SOU LUCAS FELIPE</span></h2>
 
@@ -193,7 +195,7 @@
 
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
 
             <div class="interface">
 
@@ -201,7 +203,7 @@
 
                 <div class="flex">
 
-                    <div class="img-port" style="background-image: url(assets/img/site1.png);">
+                    <div class="img-port efeito-img-port1" style="background-image: url(assets/img/site1.png);">
 
                         <div class="overlay">
 
@@ -211,7 +213,7 @@
 
                     </div>
 
-                    <div class="img-port" style="background-image: url(assets/img/site1.png);">
+                    <div class="img-port efeito-img-port2" style="background-image: url(assets/img/site1.png);">
 
                         <div class="overlay">
 
@@ -221,7 +223,7 @@
 
                     </div>
 
-                    <div class="img-port" style="background-image: url(assets/img/site1.png);">
+                    <div class="img-port efeito-img-port3" style="background-image: url(assets/img/site1.png);">
 
                         <div class="overlay">
 
@@ -237,21 +239,21 @@
 
         </section>
 
-        <section class="formulario">
+        <section class="formulario efeito-formulario" id="formulario">
 
             <div class="interface">
 
                 <h2 class="titulo">FALA <span>COMIGO</span></h2>
 
-                <form action="" method="get">
+                <form action="assets/php/email.php" method="post">
 
-                    <input type="text" placeholder="Seu nome completo:" required>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo:" required>
 
-                    <input type="text" placeholder="Seu e-mail" required>
+                    <input type="text" id="email" name="email" placeholder="Seu e-mail" required>
 
-                    <input type="text" placeholder="Seu nome completo:">
+                    <input type="text" id="telefone" name="telefone" placeholder="Seu telefone completo:">
 
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <textarea name="" id="mensagen" placeholder="Sua mensagem" required></textarea>
 
                     <div class="btn-enviar">
 
